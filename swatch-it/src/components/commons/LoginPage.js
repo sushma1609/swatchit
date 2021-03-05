@@ -1,11 +1,15 @@
 import React from 'react'
+//import {Button} from 'react-bootstrap'
 //import { authenticate } from '../../services/authService'
 
 const LoginPage = () => {
 
     const [credentials, setCredentials] = React.useState({
         email: '',
-        password: ''
+        password: '',
+        nameError:"",
+        emailError:"name is empty",
+        passwordError:""
     })
 
     const handleLogin = () => {
@@ -21,8 +25,8 @@ const LoginPage = () => {
                 e.preventDefault();
                 handleLogin()
             }} className='border p-4 login-form mx-auto mt-5'>
-                <h1 className='font-weight-bold mb-5'>Login Your <br />Account</h1>
-
+                <h1 className='font-weight-bold mb-5'><center>Login Your Account</center></h1>
+            
                 <input
                     type='email'
                     value={credentials.email}
@@ -33,6 +37,8 @@ const LoginPage = () => {
                     className='form-control mb-2'
                     placeholder='Email'
                 />
+                
+            
                 <br />
                 <br />
                 <input

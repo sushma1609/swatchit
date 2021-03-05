@@ -5,7 +5,7 @@ const Button = () => {
     
         return (
             <div>
-                <button type="button" className='btn btn-primary mt-5'>Click me <br /></button>
+                {/* <button type="button" className='btn btn-primary mt-5'>Click me <br /></button> */}
                 {/* <button type='submit' className='btn btn-primary btn-block mt-5'>Login</button> */}
                 {/* <button type="button" class="btn btn-secondary">Secondary</button>
                 <button type="button" class="btn btn-success">Success</button>
